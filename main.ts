@@ -2,26 +2,21 @@
  * START: Follow the instructions below.
  */
 
-// Add type annotations to each of these variables.
+function getPopulation(): any {
+	return 69_950_850;
+}
 
-let country: string = "Italy";
+// Add a type assertion after the call to `getPopulation()`.
+// Hint: What's the actual type of the value returned by `getPopulation()`?
 
-let year: number = undefined;
+const population: number = getPopulation();
 
-let averageTemperature: number = 23.6;
+// Now you've added a type assertion, there's a type error in the code below.
+// Remove the code that is incorrect.
 
-let visited: boolean = true;
+console.log(population);
 
-let currency = null;
-//  ^?
-
-// Change the type annotations on these variables so they are correct.
-
-let population: number = 47_450_795;
-
-let isSummer: boolean = false;
-
-let languages: string = "Spanish, English";
+console.log(population * 2);
 
 // ----
 
