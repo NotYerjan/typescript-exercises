@@ -2,15 +2,32 @@
  * START: Follow the instructions below.
  */
 
-// Create a `Country` type alias for the `string` type.
-// Change the type for each variable to use the `Country` type.
-type Country = string;
+// Add the `any` type to fix the type errors in the following code.
 
-const country1: Country = "Nigeria";
+let currency : any = { name: "Indian rupee" };
 
-const country2: Country = "Italy";
+currency.code = "THB";
 
-const country3: Country = "China";
+currency = "Baht";
+
+// Fix the if statement in this function so the type of `value` is narrowed to `string`.
+
+function countryNameLength(value: unknown) {
+    if (typeof value === "number") {
+        console.log(value.length);
+    }
+}
+
+countryNameLength("United States of America");
+
+// Fix the type error we see when calling this function.
+// Hint: Replace one of the `never` types with a different type.
+
+function throwCountryError(message: never): never {
+    throw new Error(`Could not find country: ${message}`);
+}
+
+throwCountryError("Narnia");
 
 // ----
 
