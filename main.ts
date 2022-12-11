@@ -2,21 +2,15 @@
  * START: Follow the instructions below.
  */
 
-function getPopulation(): any {
-	return 69_950_850;
-}
+// Create a `Country` type alias for the `string` type.
+// Change the type for each variable to use the `Country` type.
+type Country = string;
 
-// Add a type assertion after the call to `getPopulation()`.
-// Hint: What's the actual type of the value returned by `getPopulation()`?
+const country1: Country = "Nigeria";
 
-const population: number = getPopulation();
+const country2: Country = "Italy";
 
-// Now you've added a type assertion, there's a type error in the code below.
-// Remove the code that is incorrect.
-
-console.log(population);
-
-console.log(population * 2);
+const country3: Country = "China";
 
 // ----
 
