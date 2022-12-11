@@ -3,7 +3,7 @@
  */
 
 function getPopulation(): any {
-	return 69_950_850;
+  return 69_950_850;
 }
 
 // Add a type assertion after the call to `getPopulation()`.
@@ -13,8 +13,6 @@ const population: number = getPopulation();
 
 // Now you've added a type assertion, there's a type error in the code below.
 // Remove the code that is incorrect.
-
-console.log(population);
 
 console.log(population * 2);
 
